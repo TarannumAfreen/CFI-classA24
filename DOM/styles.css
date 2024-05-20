@@ -1,0 +1,71 @@
+/* styles.css */
+body {
+    background-image: url('image/vote.jpg'); 
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+    color: rgb(228, 242, 39);
+}
+
+#background-blur {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: inherit;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(5px);
+    z-index: -1;
+}
+
+#content {
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    z-index: 1;
+    position: relative;
+}
+
+h1, h3 {
+    margin: 0;
+    padding: 10px;
+}
+
+button {
+    background-color: rgb(217, 255, 0);
+    color: black;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    margin: 10px 0;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: black;
+    color: yellow;
+    transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+#end {
+    margin-top: 20px;
+    font-size: 18px;
+    color: rgb(6, 242, 25);
+}
