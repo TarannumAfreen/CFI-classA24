@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web</title>
+</head>
+<body>
+    <h1 id="content">Click Here to get the actual content</h1>
+    <button onclick="change()">Click here</button>
+    
+
+
+</body>
+<script>
+    function change(){
+
+        if(document.getElementById('content').innerHTML==="Click Here to get the actual content"){
+        document.getElementById('content').innerHTML="Iam the actual content"
+    }else{
+        document.getElementById('content').innerHTML="You have already clicked me"
+    }
+       
+  
+    
+}
+
+
+
+</script>
+</html>

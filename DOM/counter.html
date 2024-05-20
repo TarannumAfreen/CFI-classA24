@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web page</title>
+</head>
+<body>
+    <p id="countMe">0</p>
+    <button onclick="count()">Add</button>
+    <button onclick="minus()">Subtract</button>
+</body>
+<script>
+    let counter=0
+    let method=document.getElementById("countMe")
+    function count(){
+        counter++
+        method.innerHTML=counter
+    }
+    function minus(){
+        if(counter==0){
+            method.innerHTML=0
+        }else{
+        counter--
+        method.innerHTML=counter
+        }
+    }
+</script>
+</html>
